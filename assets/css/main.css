@@ -2883,6 +2883,7 @@ input, select, textarea {
 				#footer .copyright li a {
 					color: #c0c0c0;
 					border: none;
+					text-decoration: none;
 				}
 
 /* XLarge */
