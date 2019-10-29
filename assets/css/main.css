@@ -2434,7 +2434,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.25em;
+				font-size: 1.75em;
 			}
 
 
@@ -3264,6 +3264,21 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		/* Basic */
+			ul.feature-icons {
+				display: flex;
+				justify-content: space-evenly;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+			/* ul.feature-icons > li {
+				height: 20%;
+				width: 20%;
+			} */
+
+			ul.feature-icons > li > span {
+					display: none;
+			}
 
 			html, body {
 				min-width: 320px;
@@ -3308,8 +3323,9 @@ input, select, textarea {
 					}
 
 			ul.feature-icons li {
-				display: block;
-				width: 100%;
+				display: inline-block;
+				width: 20%;
+				margin: 10% 0px;
 			}
 
 		/* Button */
