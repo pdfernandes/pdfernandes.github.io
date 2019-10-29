@@ -2443,6 +2443,12 @@ input, select, textarea {
 	font-weight: bold;
 	
 }
+/* back to top */
+.back-to-top {
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+}
 
 /* Table */
 
@@ -2875,7 +2881,8 @@ input, select, textarea {
 				}
 
 				#footer .copyright li a {
-					color: inherit;
+					color: #c0c0c0;
+					border: none;
 				}
 
 /* XLarge */
