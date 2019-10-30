@@ -1735,7 +1735,14 @@ input, select, textarea {
 		.container.max {
 			width: 100%;
 		}
+.about-links {
+	display:flex;
+	justify-content: space-evenly;
+}
 
+.about-links > a {
+	border-bottom: none;
+}
 		@media screen and (max-width: 1024px) {
 
 			.container {
@@ -2864,6 +2871,7 @@ input, select, textarea {
 			line-height: 1em;
 			list-style: none;
 			padding: 0;
+			display: flex;
 		}
 
 			#footer .copyright li {
@@ -2876,8 +2884,9 @@ input, select, textarea {
 
 				#footer .copyright li:first-child {
 					border-left: 0;
-					margin-left: 0;
+					margin: 0 auto;
 					padding-left: 0;
+					align-self: center;
 				}
 
 				#footer .copyright li a {
