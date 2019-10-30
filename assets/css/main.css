@@ -1740,7 +1740,7 @@ input, select, textarea {
 	justify-content: space-evenly;
 }
 
-.about-links > a {
+.about-links > i > a {
 	border-bottom: none;
 }
 		@media screen and (max-width: 1024px) {
