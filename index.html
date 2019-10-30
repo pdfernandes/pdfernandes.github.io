@@ -34,7 +34,9 @@
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+	<script src="main.js"></script>
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -126,9 +128,9 @@
           <div class="container">
             <h3>Technical Skills</h3>
             <p>
-			  Thise is a sample of the many technologies in my repertoire. 
-			  <!-- <br> -->
-			  <!-- I am always doing that which I cannot do, in order that I may learn how to do it. -Pablo Picasso -->
+              <!-- Thise is a sample of the many technologies in my repertoire.  -->
+              <!-- <br> -->
+              <!-- I am always doing that which I cannot do, in order that I may learn how to do it. -Pablo Picasso -->
             </p>
             <ul class="feature-icons">
               <li class="devicon-javascript-plain"><span>JavaScript</span></li>
@@ -150,36 +152,52 @@
           <div class="container">
             <h3>Projects</h3>
             <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
+              <!-- Integer eu ante ornare amet commetus vestibulum blandit integer in
               curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus.
+              integer. Integer eu ante ornare amet commetus. -->
             </p>
             <div class="features">
               <article>
-                <a href="#" class="image"
-                  ><img src="images/pic01.jpg" alt=""
+                <a href="https://tikr.herokuapp.com/" class="image"
+                  ><img src="images/tikr_splash.png" alt="tikr splash page"
                 /></a>
                 <div class="inner">
-                  <h4>Possibly broke spacetime</h4>
+                  <h4>tikr</h4>
                   <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
+                    tikr provides users with real-time stock information and
+                    allows users to make trades, maintain a portfolio and manage
+                    a watchlist. tikr puts the power investment in the hands of
+                    the individual.
+                    <br />
+                    <br />
+                    tikr utilizes rails 5 for the back-end with JavaScript in
+                    the front-end. tikr leverages React and Redux to dynamically
+                    render components and manage local state.
                   </p>
                 </div>
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic02.jpg" alt=""
+                  ><img
+                    src="images/universtaty_show.png"
+                    alt="universtaty show page"
                 /></a>
                 <div class="inner">
-                  <h4>Terraformed a small moon</h4>
+                  <h4>Universtaty</h4>
                   <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
+                    Universtaty is a data visualization project written using
+                    pure JavaScript and D3. Universtaty aims to provide students
+                    with quick at-a-glance university statistics.
+					<br />
+					<br />
+                    Universtaty uses JavaScript's asynchronous function and DOM
+                    manipulation to retrieve university metrics from external
+                    APIs. Data is then formatted using D3 to create a variety of
+                    different charts.
                   </p>
                 </div>
               </article>
-              <article>
+              <!-- <article>
                 <a href="#" class="image"
                   ><img src="images/pic03.jpg" alt=""
                 /></a>
@@ -190,7 +208,7 @@
                     integer in curae ac faucibus integer adipiscing ornare amet.
                   </p>
                 </div>
-              </article>
+              </article> -->
             </div>
           </div>
         </section>
@@ -204,15 +222,16 @@
               curae ac faucibus integer non. Adipiscing cubilia elementum
               integer. Integer eu ante ornare amet commetus.
             </p>
-            <form method="post" action="#">
+            <form action="https://formspree.io/mvopvzvv" method="POST">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
-                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input type="text" class='name' name="name" id="name" placeholder="Name" />
                 </div>
                 <div class="col-6 col-12-xsmall">
                   <input
                     type="email"
-                    name="email"
+					name="email"
+					class='email'
                     id="email"
                     placeholder="Email"
                   />
@@ -220,7 +239,8 @@
                 <div class="col-12">
                   <input
                     type="text"
-                    name="subject"
+					name="subject"
+					class='subject'
                     id="subject"
                     placeholder="Subject"
                   />
@@ -228,7 +248,8 @@
                 <div class="col-12">
                   <textarea
                     name="message"
-                    id="message"
+					id="message"
+					class='message'
                     placeholder="Message"
                     rows="6"
                   ></textarea>
@@ -238,7 +259,7 @@
                     <li>
                       <input
                         type="submit"
-                        class="primary"
+                        class="primary form-submit"
                         value="Send Message"
                       />
                     </li>
